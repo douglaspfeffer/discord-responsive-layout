@@ -1,0 +1,323 @@
+@import url(./reset.css);
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    background-image: url(../image/header-background-428x506.svg);
+    background-size: cover;
+
+    height: 50.5rem;
+    
+    display: flex;
+}
+
+header .header-content{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 auto;
+}
+
+header .header-content .title{
+    width: 27.8rem;
+}
+
+header .header-content .title h1{
+    font-family: 'Luckiest Guy', 'cursive';
+    font-weight: 400;
+    font-size: 3.2rem;
+    color: #FFFFFF;  
+}
+
+header .header-content .content{
+    width: 38.1rem;
+}
+
+header .header-content .content p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    margin: 2.4rem 0;
+}
+
+header .header-content .buttons{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    gap: 1.6rem;
+}
+
+header .header-content .buttons button{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+
+    width: 38.1rem;
+    border-style: none;
+}
+
+header .header-content .buttons button:first-child{
+    background-color: #FFFFFF;
+    border-radius: 2.8rem;
+    height: 5.4rem;
+
+    color: #23272A;
+}
+
+header .header-content .buttons button:last-child{
+    background-color: #23272A;
+    border-radius: 2.8rem;
+    height: 5.4rem;
+
+    color: #FFFFFF;
+}
+
+.section-color section:nth-child(even){
+    background: #F6F6F6;
+}
+
+section{
+    display: flex;
+    height: 57.3rem;
+}
+
+section .section-content{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 auto;
+}
+
+section .section-content .image{
+    width: 37.9rem;
+    height: 25.2rem;
+}
+
+section .section-content .title-content-div-desktop .title{
+    width: 37rem;
+}
+
+section .section-content .title-content-div-desktop .title h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2.4rem;
+    color: #23272A;
+    margin: 2.7rem 0;
+}
+
+section .section-content .title-content-div-desktop .content{
+    width: 37.8rem;
+}
+
+section .section-content .title-content-div-desktop .content p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #23272A;
+}
+
+section .column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section .section-content .title-content-div-desktop .title h2.new-font{
+    font-family: 'Luckiest Guy', 'cursive';
+    font-weight: 400;
+    font-size: 3.2rem;
+    color: #23272A;
+}
+
+footer{
+    height: 14rem;
+    background-color: #23272A;
+
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-content{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 411px) {
+
+    header .header-content .content{
+        width: 32rem;
+    }
+    
+    header .header-content .title{
+        width: 65%;
+    }
+
+    header .header-content .buttons{
+        width: 32rem;
+    }
+
+    header .header-content .buttons button{
+        width: 32rem;
+    }
+
+    section .section-content .image{
+        width: 30rem;
+    }
+
+    section .section-content .title-content-div-desktop .title{
+        width: 32rem;
+    }
+
+    section .section-content .title-content-div-desktop .content{
+        width: 32rem;
+    }
+}
+
+@media only screen and (min-width: 768px){  
+    header{
+        background-image: url(../image/header-background-1280x459.svg);
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+
+        height: 45.9rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .header-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+
+        width: 75.7rem;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    header .header-content .title,
+    header .header-content .content{
+        width: auto;
+
+        text-align: center;
+    }
+
+    header .header-content .title{
+        width: 31.3rem;
+        margin: auto;
+    }
+
+    header .header-content .title h1{
+        font-size: 5.6rem;
+    }
+
+    header .header-content .content p{
+        text-align: center;
+    }
+
+    header .header-content .buttons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    header .header-content .buttons button{
+        height: 4.4rem;
+    }
+    
+    header .header-content button:first-child{
+        width: 20.5rem;
+    }
+    
+    header .header-content button:last-child{
+        width: 28.1rem;
+    }
+
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    section .section-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        max-width: 100%;
+        height: auto;
+    }
+
+    section .section-content .title-content-div-desktop .title{
+        width: 32.9rem;
+    }
+
+    section .section-content .title-content-div-desktop .title h2{
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    section .section-content .title-content-div-desktop .content{
+        width: 34.8rem;
+    }
+
+    section .section-content .image{
+        width: 60.7rem;
+        height: 39.4rem;
+    }
+
+    section .row-reverse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    section .column-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        align-self: center;
+    }
+
+    .section-color section:last-child{
+        height: 74.4rem;
+    }
+
+    section .column-reverse .title-content-div-desktop{
+        text-align: center;
+    }
+
+    section .column-reverse .title-content-div-desktop .title{
+        width: auto;
+    }
+
+    section .column-reverse .title-content-div-desktop .title h2.new-font{
+        font-size: 4rem;
+    }
+
+    section .column-reverse .title-content-div-desktop .content{
+        width: 76.8rem;
+        margin: 1.6rem 0;
+    }
+
+    section img{
+        width: 100%;
+    }
+
+}
